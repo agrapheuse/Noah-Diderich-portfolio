@@ -4,21 +4,69 @@ export function Career() {
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold text-center">My Career</h2>
         <div className="mt-6 space-y-4">
+          {/* Education Section */}
           <div className="bg-gray-100 p-4 rounded shadow">
-            <h3 className="text-xl font-semibold">Software Engineer at XYZ</h3>
-            <p className="text-gray-600">2021 - Present</p>
-            <p className="mt-2 text-gray-700">
-              Developing robust web applications and APIs using modern
-              frameworks and tools.
-            </p>
+            <h3 className="text-xl font-semibold">Education</h3>
+            <ul className="mt-2 text-gray-700 space-y-2">
+              <li>
+                <strong>Karel de Groot Hogeschool</strong> (2020-2024)
+                <br />
+                Applied Computer Science Bachelor Degree
+              </li>
+              <li>
+                <strong>Test of English as a Foreign Language (TOEFL)</strong>
+                <br />
+                April 2021 – Score: Advanced
+              </li>
+              <li>
+                <strong>Université Libre de Bruxelles</strong> (2019-2021)
+                <br />
+                Second year Bachelor in Physics
+              </li>
+            </ul>
           </div>
+
+          {/* Work Experience Section */}
           <div className="bg-gray-100 p-4 rounded shadow">
-            <h3 className="text-xl font-semibold">Intern at ABC Corp</h3>
-            <p className="text-gray-600">2020 - 2021</p>
-            <p className="mt-2 text-gray-700">
-              Worked on a mobile application to streamline task assignment
-              processes.
-            </p>
+            <h3 className="text-xl font-semibold">Work Experience</h3>
+            <ul className="mt-2 text-gray-700 space-y-2">
+              <li>
+                <strong>
+                  Tryve monday.com partners and CRM specialists, Edegem
+                </strong>
+                <br />
+                Software Development Intern | 5 April - 7 June 2024
+                <br />
+                Reference: Maarten Cautreels (
+                <a
+                  href="mailto:maarten.cautreels@localyse.eu"
+                  className="text-blue-500 hover:underline"
+                >
+                  maarten.cautreels@localyse.eu
+                </a>
+                )
+              </li>
+              <li>
+                <strong>Atlas Sales Agency, Brussels</strong>
+                <br />
+                Direct Sales Representative | Summer 2021
+              </li>
+              <li>
+                <strong>Roeland Creative Language Learning, London</strong>
+                <br />
+                Full immersion language camp | 8-15 July 2017
+              </li>
+              <li>
+                <strong>Tipik Communication Agency, Brussels</strong>
+                <br />
+                Observation internship | 3-7 July 2017
+              </li>
+              <li>
+                <strong>V+ Architectural Practice, Brussels</strong>
+                <br />
+                Observation internship | 26-30 June 2017
+              </li>
+            </ul>
           </div>
         </div>
       </div>
