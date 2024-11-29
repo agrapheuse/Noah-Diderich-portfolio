@@ -12,6 +12,18 @@ export async function sendContactMeEmail(data: FormData) {
     },
   });
 
+  await new Promise((resolve, reject) => {
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
+  });
+
   const mailOptions = {
     from: process.env.GMAIL_USERNAME,
     to: process.env.GMAIL_USERNAME,
@@ -19,11 +31,16 @@ export async function sendContactMeEmail(data: FormData) {
     text: data.message,
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error("Email sending failed:", error);
-    } else {
-      console.log("Email sent: " + info.response);
-    }
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailOptions, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
   });
 }
