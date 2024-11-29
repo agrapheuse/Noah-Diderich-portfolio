@@ -13,8 +13,8 @@ export type FormData = {
 export function ContactMe() {
   const { register, handleSubmit } = useForm<FormData>();
 
-  function onSubmit(data: FormData) {
-    sendContactMeEmail(data);
+  async function onSubmit(data: FormData) {
+    await sendContactMeEmail(data);
   }
 
   return (
