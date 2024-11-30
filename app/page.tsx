@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100 text-gray-800">
       <header className="bg-white shadow">
         <div className="container mx-auto px-6 py-4">
-          <h1 className="text-3xl font-bold">Noah Diderich hello</h1>
+          <h1 className="text-3xl font-bold">Noah Diderich</h1>
         </div>
       </header>
 
