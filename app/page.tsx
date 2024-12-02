@@ -2,6 +2,7 @@ import { AboutMe } from "@/components/AboutMe";
 import { Career } from "@/components/Career";
 import { ContactMe } from "@/components/ContactMe";
 import { HeroSection } from "@/components/HeroSection";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection></HeroSection>
       <AboutMe></AboutMe>
       <Career></Career>
+      <Skills></Skills>
       <ContactMe></ContactMe>
 
       <footer className="bg-gray-800 text-gray-200 py-6">

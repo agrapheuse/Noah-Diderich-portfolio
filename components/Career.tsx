@@ -4,7 +4,6 @@ export function Career() {
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold text-center">My Career</h2>
         <div className="mt-6 space-y-4">
-          {/* Education Section */}
           <div className="bg-gray-100 p-4 rounded shadow">
             <h3 className="text-xl font-semibold">Education</h3>
             <ul className="mt-2 text-gray-700 space-y-2">
@@ -26,7 +25,6 @@ export function Career() {
             </ul>
           </div>
 
-          {/* Work Experience Section */}
           <div className="bg-gray-100 p-4 rounded shadow">
             <h3 className="text-xl font-semibold">Work Experience</h3>
             <ul className="mt-2 text-gray-700 space-y-2">

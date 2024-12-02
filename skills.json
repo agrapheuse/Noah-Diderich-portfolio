@@ -1,0 +1,137 @@
+{
+  "skills": {
+    "java": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+      "link": "https://www.java.com",
+      "related": {
+        "spring": {
+          "logo": "https://www.vectorlogo.zone/logos/springio/springio-icon.svg",
+          "link": "https://spring.io/"
+        },
+        "rabbitMQ": {
+          "logo": "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg",
+          "link": "https://www.rabbitmq.com"
+        },
+        "gradle": {
+          "logo": "https://www.vectorlogo.zone/logos/gradle/gradle-icon.svg",
+          "link": "https://gradle.org"
+        },
+        "bootstrap": {
+          "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
+          "link": "https://getbootstrap.com"
+        }
+      }
+    },
+    "javascript": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "related": {
+        "nodeJS": {
+          "logo": "https://www.vectorlogo.zone/logos/gradle/gradle-icon.svg",
+          "link": "https://nodejs.org"
+        }
+      }
+    },
+    "typescript": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+      "link": "https://www.typescriptlang.org/",
+      "related": {
+        "react": {
+          "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+          "link": "https://reactjs.org"
+        },
+        "tailwindCSS": {
+          "logo": "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+          "link": "https://tailwindcss.com"
+        },
+        "svelte": {
+          "logo": "https://www.vectorlogo.zone/logos/sveltetechnology/sveltetechnology-icon.svg",
+          "link": "https://svelte.com"
+        },
+        "react native": {
+          "logo": "https://reactnative.dev/img/header_logo.svg",
+          "link": "https://reactnative.dev"
+        }
+      }
+    },
+    "HTML": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+      "link": "https://www.w3.org/html/",
+      "related": {
+        "CSS": {
+          "logo": "https://www.svgrepo.com/show/452185/css-3.svg",
+          "link": "https://www.w3schools.com/css/"
+        }
+      }
+    },
+    "python": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+      "link": "https://www.python.org",
+      "related": {
+        "pandas": {
+          "logo": "https://www.svgrepo.com/show/473742/pandas.svg",
+          "link": "https://pandas.pydata.org/"
+        },
+        "numPy": {
+          "logo": "https://www.svgrepo.com/show/354127/numpy.svg",
+          "link": "https://numpy.org/"
+        },
+        "keras": {
+          "logo": "https://www.svgrepo.com/show/341962/keras.svg",
+          "link": "https://keras.io/"
+        },
+        "tensorFlow": {
+          "logo": "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg",
+          "link": "https://www.tensorflow.org"
+        },
+        "ROS": {
+          "logo": "https://www.vectorlogo.zone/logos/ros/ros-icon.svg",
+          "link": "https://www.ros.org"
+        },
+        "jupyter": {
+          "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
+          "link": "https://jupyter.org"
+        }
+      }
+    },
+    "SQL": {
+      "logo": "https://www.svgrepo.com/show/341068/sql.svg",
+      "related": {
+        "microsoft SQL": {
+          "logo": "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
+          "link": "https://www.microsoft.com/en-us/sql-server"
+        },
+        "mySQL": {
+          "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+          "link": "https://www.mysql.com"
+        },
+        "tensorFlow": {
+          "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
+          "link": "https://www.postgresql.org"
+        }
+      }
+    }
+  },
+  "tools": {
+    "google cloud": {
+      "logo": "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg",
+      "link": "https://cloud.google.com"
+    },
+    "azure": {
+      "logo": "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg",
+      "link": "https://azure.microsoft.com"
+    },
+    "linux": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+      "link": "https://www.linux.org"
+    },
+    "mongoDB": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      "link": "https://www.mongodb.com"
+    },
+    "git": {
+      "logo": "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      "link": "https://git-scm.com"
+    }
+  }
+}
