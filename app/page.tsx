@@ -1,4 +1,3 @@
-import { AboutMe } from "@/components/AboutMe";
 import { Career } from "@/components/Career";
 import { ContactMe } from "@/components/ContactMe";
 import { HeroSection } from "@/components/HeroSection";
@@ -16,7 +15,6 @@ export default function Home() {
       </header>
 
       <HeroSection></HeroSection>
-      <AboutMe></AboutMe>
       <Career></Career>
       <Skills></Skills>
       <ContactMe></ContactMe>
