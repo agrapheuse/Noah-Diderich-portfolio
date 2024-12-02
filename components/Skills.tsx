@@ -33,11 +33,11 @@ export function Skills() {
     <div className="skills-tools">
       <h1 className="flex justify-center p-4 text-3xl font-bold">Skills</h1>
       <div className="skills-container">
-        <div className="skills-row flex justify-center gap-4 p-4">
+        <div className="skills-row flex justify-center gap-8 p-4 [&:hover>div]:opacity-50">
           {Object.keys(skillsJson.skills).map((key) => (
             <div
               key={key}
-              className="skill-item cursor-pointer flex flex-col items-center"
+              className="skill-item hover:!opacity-100 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
               onClick={() => handleSkillClick(key)}
             >
               <Image
@@ -47,19 +47,18 @@ export function Skills() {
                 width="8"
                 height="8"
               />
-              <span className="text-center mt-2">{key}</span>
             </div>
           ))}
         </div>
 
         {selectedSkill && skillsJson.skills[selectedSkill]?.related && (
-          <div className="related-skills flex justify-center gap-4 mt-4">
+          <div className="related-skills flex justify-center gap-8 mt-4">
             {Object.keys(skillsJson.skills[selectedSkill].related).length ? (
               Object.keys(skillsJson.skills[selectedSkill].related).map(
                 (relatedKey) => (
                   <div
                     key={relatedKey}
-                    className="related-item flex flex-col items-center"
+                    className="related-skill-item bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
                   >
                     <a
                       href={
@@ -92,11 +91,11 @@ export function Skills() {
       </div>
       <h1 className="flex justify-center p-4 text-3xl font-bold">Tools</h1>
       <div className="tools-container">
-        <div className="tools-row flex justify-center gap-4 p-4">
+        <div className="tools-row flex justify-center gap-8 p-4">
           {Object.keys(skillsJson.tools).map((key) => (
             <div
               key={key}
-              className="tool-item cursor-pointer flex flex-col items-center"
+              className="tool-item bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
               onClick={() => handleSkillClick(key)}
             >
               <Image
@@ -106,7 +105,6 @@ export function Skills() {
                 width="8"
                 height="8"
               />
-              <span className="text-center mt-2">{key}</span>
             </div>
           ))}
         </div>

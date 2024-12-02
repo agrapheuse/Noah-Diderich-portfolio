@@ -9,7 +9,9 @@ export default function Home() {
     <div className="min-h-screen text-gray-800 bg-background">
       <header className="bg-foreground shadow">
         <div className="container mx-auto px-6 py-4">
-          <h1 className="text-3xl font-bold">Noah Diderich</h1>
+          <h1 className="text-3xl font-bold text-background-font-color">
+            Noah Diderich
+          </h1>
         </div>
       </header>
 
