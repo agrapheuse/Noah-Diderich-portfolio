@@ -1,6 +1,8 @@
+import { Card } from "./ui/card";
+
 export function AboutMe() {
   return (
-    <section className="bg-gray-50 py-12">
+    <Card className="bg-foreground py-12">
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold text-center">About Me</h2>
         <p className="mt-4 text-gray-600 text-center">
@@ -21,6 +23,6 @@ export function AboutMe() {
           in full-stack development but I have good knowledge of data and AI.
         </p>
       </div>
-    </section>
+    </Card>
   );
 }

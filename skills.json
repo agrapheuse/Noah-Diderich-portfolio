@@ -27,7 +27,7 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "related": {
         "nodeJS": {
-          "logo": "https://www.vectorlogo.zone/logos/gradle/gradle-icon.svg",
+          "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
           "link": "https://nodejs.org"
         }
       }
@@ -120,6 +120,10 @@
     "azure": {
       "logo": "https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg",
       "link": "https://azure.microsoft.com"
+    },
+    "docker": {
+      "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+      "link": "https://www.docker.com"
     },
     "linux": {
       "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",

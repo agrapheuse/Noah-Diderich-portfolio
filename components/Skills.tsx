@@ -13,7 +13,7 @@ export function Skills() {
 
   return (
     <div className="skills-tools">
-      <h1 className="flex justify-center p-4 text-3xl">Skills</h1>
+      <h1 className="flex justify-center p-4 text-3xl font-bold">Skills</h1>
       <div className="skills-container">
         <div className="skills-row flex justify-center gap-4 p-4">
           {Object.keys(skillsJson.skills).map((key) => (
@@ -72,7 +72,7 @@ export function Skills() {
           </div>
         )}
       </div>
-      <h1 className="flex justify-center p-4 text-3xl">Tools</h1>
+      <h1 className="flex justify-center p-4 text-3xl font-bold">Tools</h1>
       <div className="tools-container">
         <div className="tools-row flex justify-center gap-4 p-4">
           {Object.keys(skillsJson.tools).map((key) => (

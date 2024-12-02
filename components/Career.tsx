@@ -1,10 +1,12 @@
+import { Card } from "./ui/card";
+
 export function Career() {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-background py-12">
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold text-center">My Career</h2>
         <div className="mt-6 space-y-4">
-          <div className="bg-gray-100 p-4 rounded shadow">
+          <Card className="bg-foreground rounded shadow">
             <h3 className="text-xl font-semibold">Education</h3>
             <ul className="mt-2 text-gray-700 space-y-2">
               <li>
@@ -23,9 +25,9 @@ export function Career() {
                 Second year Bachelor in Physics
               </li>
             </ul>
-          </div>
+          </Card>
 
-          <div className="bg-gray-100 p-4 rounded shadow">
+          <Card className="bg-foreground p-4 rounded shadow">
             <h3 className="text-xl font-semibold">Work Experience</h3>
             <ul className="mt-2 text-gray-700 space-y-2">
               <li>
@@ -65,7 +67,7 @@ export function Career() {
                 Observation internship | 26-30 June 2017
               </li>
             </ul>
-          </div>
+          </Card>
         </div>
       </div>
     </section>
