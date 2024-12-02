@@ -1,8 +1,26 @@
 "use client";
 
-import skillsJson from "@/skills.json";
+import skillsJsonData from "@/skills.json";
 import Image from "next/image";
 import { useState } from "react";
+
+type RelatedSkill = {
+  logo: string;
+  link: string;
+};
+
+type Skill = {
+  logo: string;
+  link: string;
+  related: Record<string, RelatedSkill>;
+};
+
+type SkillsJson = {
+  skills: Record<string, Skill>;
+  tools: Record<string, RelatedSkill>;
+};
+
+const skillsJson: SkillsJson = skillsJsonData;
 
 export function Skills() {
   const [selectedSkill, setSelectedSkill] = useState<string | null>(null);

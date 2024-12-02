@@ -96,6 +96,7 @@
     },
     "SQL": {
       "logo": "https://www.svgrepo.com/show/341068/sql.svg",
+      "link": "",
       "related": {
         "microsoft SQL": {
           "logo": "https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg",
