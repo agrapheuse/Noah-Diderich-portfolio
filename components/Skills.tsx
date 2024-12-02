@@ -3,6 +3,7 @@
 import skillsJsonData from "@/skills.json";
 import Image from "next/image";
 import { useState } from "react";
+import { Card } from "./ui/card";
 
 type RelatedSkill = {
   logo: string;
@@ -31,8 +32,10 @@ export function Skills() {
 
   return (
     <div className="skills-tools">
-      <h1 className="flex justify-center p-4 text-3xl font-bold">Skills</h1>
-      <div className="skills-container">
+      <Card className="skills-container bg-foreground m-12">
+        <h1 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
+          Skills
+        </h1>
         <div className="skills-row flex justify-center gap-8 p-4 [&:hover>div]:opacity-50">
           {Object.keys(skillsJson.skills).map((key) => (
             <div
@@ -52,13 +55,17 @@ export function Skills() {
         </div>
 
         {selectedSkill && skillsJson.skills[selectedSkill]?.related && (
-          <div className="related-skills flex justify-center gap-8 mt-4">
+          <div className="divider mx-4 mt-6 mb-4 h-[2px] bg-gradient-to-r from-gray-600 via-gray-300 to-gray-600"></div>
+        )}
+
+        {selectedSkill && skillsJson.skills[selectedSkill]?.related && (
+          <div className="related-skills-row flex justify-center gap-8 p-4 [&:hover>div]:opacity-50">
             {Object.keys(skillsJson.skills[selectedSkill].related).length ? (
               Object.keys(skillsJson.skills[selectedSkill].related).map(
                 (relatedKey) => (
                   <div
                     key={relatedKey}
-                    className="related-skill-item bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
+                    className="related-skill-item hover:!opacity-100 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
                   >
                     <a
                       href={
@@ -88,9 +95,11 @@ export function Skills() {
             )}
           </div>
         )}
-      </div>
-      <h1 className="flex justify-center p-4 text-3xl font-bold">Tools</h1>
-      <div className="tools-container">
+      </Card>
+      <Card className="tools-container bg-foreground m-12">
+        <h1 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
+          Tools
+        </h1>
         <div className="tools-row flex justify-center gap-8 p-4">
           {Object.keys(skillsJson.tools).map((key) => (
             <div
@@ -108,7 +117,7 @@ export function Skills() {
             </div>
           ))}
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
