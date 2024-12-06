@@ -6,7 +6,10 @@ import { Button } from "./ui/button";
 
 export function HeroSection() {
   return (
-    <div className="flex justify-center items-center relative m-10 p-8 py-12 h-[800px]">
+    <div
+      id="about-me"
+      className="flex justify-center items-center relative m-10 p-8 py-12 h-[800px]"
+    >
       <Card className="rounded-lg bg-foreground py-12 flex justify-center items-center pt-12">
         <Image
           src={profilePic}

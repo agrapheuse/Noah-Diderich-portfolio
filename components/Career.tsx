@@ -2,7 +2,10 @@ import { Card } from "./ui/card";
 
 export function Career() {
   return (
-    <div className="flex justify-center items-center relative m-10 p-8 py-12 ">
+    <div
+      id="career"
+      className="flex justify-center items-center relative m-10 p-8 py-12 "
+    >
       <Card className="container m-auto p-6 font-[family-name:var(--font-geist-mono)] bg-background">
         <h2 className="text-2xl font-bold text-center text-gray-200">
           My Career

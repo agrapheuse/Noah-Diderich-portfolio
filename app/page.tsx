@@ -51,6 +51,32 @@ export default function Home() {
             Diderich
           </h1>
         </div>
+        <div className="flex justify-between items-center w-full px-8 m-6">
+          <a
+            href="#about-me"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+          >
+            About Me
+          </a>
+          <a
+            href="#career"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+          >
+            My Career
+          </a>
+          <a
+            href="#skills"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+          >
+            My Skills
+          </a>
+          <a
+            href="#contact-me"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+          >
+            Contact Me
+          </a>
+        </div>
       </header>
 
       <section className="py-80">
@@ -62,7 +88,7 @@ export default function Home() {
       <section className="py-80">
         <Skills />
       </section>
-      <section className="py-80">
+      <section className="pt-80 pb-40">
         <ContactMe />
       </section>
 

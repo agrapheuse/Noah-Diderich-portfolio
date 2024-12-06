@@ -39,7 +39,7 @@ export function Skills() {
   };
 
   return (
-    <div className="skills-tools">
+    <div id="skills" className="skills-tools m-10 py-12">
       <Card className="skills-container bg-foreground m-12">
         <h1 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Skills
