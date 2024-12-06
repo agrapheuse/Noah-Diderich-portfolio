@@ -6,9 +6,8 @@ import { Button } from "./ui/button";
 
 export function HeroSection() {
   return (
-    <div className="flex justify-center items-center relative m-20 p-8 py-12 h-[800px]">
-      <div className="absolute w-full h-full inset-0 rounded-lg bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500"></div>
-      <Card className="relative w-[96%] h-[96%] rounded-lg bg-foreground py-12 flex justify-center items-center pt-12">
+    <div className="flex justify-center items-center relative m-10 p-8 py-12 h-[800px]">
+      <Card className="rounded-lg bg-foreground py-12 flex justify-center items-center pt-12">
         <Image
           src={profilePic}
           alt="My Portfolio Image"
@@ -43,7 +42,9 @@ export function HeroSection() {
             href="/projects"
             className="flex justify-center items-center font-[family-name:var(--font-geist-mono)]"
           >
-            <Button className="m-4 ">Explore Projects</Button>
+            <Button className="mt-8 bg-black text-white hover:bg-gradient-to-r hover:-translate-y-1 hover:scale-110 hover:from-purple-500 hover:via-pink-500 hover:to-red-500 transition-all duration-300 ease-linear">
+              Explore Projects
+            </Button>
           </Link>
         </div>
       </Card>

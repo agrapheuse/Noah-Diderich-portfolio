@@ -4,15 +4,17 @@ import { Card } from "./ui/card";
 
 export function ContactMe() {
   return (
-    <Card className="bg-foreground py-12">
+    <Card className="bg-foreground p-12 m-10">
       <div className="container mx-auto px-6">
-        <h2 className="text-2xl font-bold text-center">Contact Me</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-200 font-[family-name:var(--font-geist-mono)]">
+          Contact Me
+        </h2>
         <div className="mt-6 text-center">
           <a
             href="https://www.linkedin.com/in/noah-diderich/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-[family-name:var(--font-geist-mono)]"
           >
             Connect with me on LinkedIn
           </a>

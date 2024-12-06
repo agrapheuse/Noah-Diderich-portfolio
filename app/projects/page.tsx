@@ -5,7 +5,7 @@ import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 
 export default function Projects() {
-  const [vantaEffect, setVantaEffect] = useState(0);
+  const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Projects() {
       );
     }
     return () => {
-      if (vantaEffect) setVantaEffect(0);
+      if (vantaEffect) setVantaEffect(null);
     };
   }, [vantaEffect]);
 

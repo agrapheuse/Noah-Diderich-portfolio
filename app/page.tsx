@@ -9,7 +9,7 @@ import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 
 export default function Home() {
-  const [vantaEffect, setVantaEffect] = useState(0);
+  const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
 
   useEffect(() => {
@@ -18,10 +18,10 @@ export default function Home() {
         FOG({
           el: vantaRef.current,
           THREE,
-          mouseControls: true,
-          touchControls: true,
+          mouseControls: false,
+          touchControls: false,
           gyroControls: false,
-          minHeight: 200.0,
+          minHeight: 400.0,
           minWidth: 200.0,
           highlightColor: 0x6a5717,
           midtoneColor: 0xbd250d,
@@ -34,13 +34,16 @@ export default function Home() {
       );
     }
     return () => {
-      if (vantaEffect) setVantaEffect(0);
+      if (vantaEffect) setVantaEffect(null);
     };
   }, [vantaEffect]);
 
   return (
-    <div ref={vantaRef} className="min-h-[100vh] overflow-auto z-0">
-      <header className="bg-foreground">
+    <div
+      ref={vantaRef}
+      className="min-h-[100vh] overflow-auto z-0 overflow-x-hidden"
+    >
+      <header className="bg-middleground">
         <div className="container mx-auto px-6 py-4">
           <h1 className="text-6xl font-bold text-background-font-color text-center leading-relaxed text-gray-200 font-[family-name:var(--font-geist-mono)]">
             Noah
@@ -63,8 +66,8 @@ export default function Home() {
         <ContactMe />
       </section>
 
-      <footer className="bg-foreground text-gray-200 py-6">
-        <div className="bg-foreground container mx-auto px-6 text-center">
+      <footer className="bg-middleground text-gray-200 py-6">
+        <div className="container mx-auto px-6 text-center">
           <p>&copy; {new Date().getFullYear()}</p>
         </div>
       </footer>

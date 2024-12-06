@@ -16,6 +16,7 @@ body {
   :root {
     --background: 0, 0%, 7%;
     --foreground: 270, 1%, 19%;
+    --middleground: 270, 1%, 19%;
     --background-font-color: 0, 0%, 100%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
