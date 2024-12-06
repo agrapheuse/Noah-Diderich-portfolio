@@ -30,7 +30,7 @@ export default function Projects() {
       );
     }
     return () => {
-      if (vantaEffect) vantaEffect.destroy();
+      if (vantaEffect) setVantaEffect(0);
     };
   }, [vantaEffect]);
 

@@ -28,13 +28,13 @@ export default function Home() {
           lowlightColor: 0x3719b8,
           baseColor: 0x292929,
           blurFactor: 0.4,
-          speed: 2,
+          speed: 1.5,
           zoom: 3.0,
         })
       );
     }
     return () => {
-      if (vantaEffect) vantaEffect.destroy();
+      if (vantaEffect) setVantaEffect(0);
     };
   }, [vantaEffect]);
 
