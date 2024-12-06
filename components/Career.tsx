@@ -4,7 +4,7 @@ export function Career() {
   return (
     <div
       id="career"
-      className="flex justify-center items-center relative m-10 p-8 py-12 "
+      className="flex justify-center items-center relative p-4 mx-10"
     >
       <Card className="container m-auto p-6 font-[family-name:var(--font-geist-mono)] bg-background">
         <h2 className="text-2xl font-bold text-center text-gray-200">

@@ -39,40 +39,37 @@ export default function Home() {
   }, [vantaEffect]);
 
   return (
-    <div
-      ref={vantaRef}
-      className="min-h-[100vh] overflow-auto z-0 overflow-x-hidden"
-    >
+    <div ref={vantaRef} className="">
       <header className="bg-middleground">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-6 py-10">
           <h1 className="text-6xl font-bold text-background-font-color text-center leading-relaxed text-gray-200 font-[family-name:var(--font-geist-mono)]">
             Noah
             <br />
             Diderich
           </h1>
         </div>
-        <div className="flex justify-between items-center w-full px-8 m-6">
+        <div className="sticky top-10 flex justify-between items-center w-auto px-48 m-6 mt-20 bg-middleground ">
           <a
             href="#about-me"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
           >
             About Me
           </a>
           <a
             href="#career"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
           >
             My Career
           </a>
           <a
             href="#skills"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
           >
             My Skills
           </a>
           <a
             href="#contact-me"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
           >
             Contact Me
           </a>
