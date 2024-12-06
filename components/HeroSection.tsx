@@ -6,8 +6,8 @@ import { Button } from "./ui/button";
 
 export function HeroSection() {
   return (
-    <div className="flex justify-center items-center relative m-12">
-      <div className="absolute w-full h-full inset-0 rounded-lg bg-gradient-to-br from-pink-500 via-cyan-500 to-violet-500"></div>
+    <div className="flex justify-center items-center relative m-20 p-8 py-12">
+      <div className="absolute w-full h-full inset-0 rounded-lg bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500"></div>
       <Card className="relative w-[96%] h-[96%] rounded-lg bg-foreground py-12 flex justify-center items-center pt-12">
         <Image
           src={profilePic}
