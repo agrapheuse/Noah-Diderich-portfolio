@@ -48,7 +48,7 @@ export default function Home() {
             Diderich
           </h1>
         </div>
-        <div className="sticky top-10 flex justify-between items-center w-auto px-48 m-6 mt-20 bg-middleground ">
+        <div className="sticky top-10 z-10 flex justify-between items-center w-auto px-48 m-6 mt-20 bg-middleground ">
           <a
             href="#about-me"
             className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
