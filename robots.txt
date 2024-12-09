@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /projects
+Disallow: /public/
+Disallow: /css/
+Disallow: /js/
+Disallow: /ajax/
+Disallow: /api/
