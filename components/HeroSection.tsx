@@ -16,7 +16,7 @@ export function HeroSection() {
           alt="My Portfolio Image"
           width={300}
           height={300}
-          className="relative rounded-full shadow-md max-h-80 m-8 border-gradient-to-r from-purple-500 via-pink-500 to-red-500"
+          className="relative rounded-full shadow-md w-auto h-auto max-h-80 m-8 border-gradient-to-r from-purple-500 via-pink-500 to-red-500"
         />
 
         <div className="container mx-auto px-6">

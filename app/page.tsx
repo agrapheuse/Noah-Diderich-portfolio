@@ -10,6 +10,8 @@ import * as THREE from "three";
 
 export default function Home() {
   const [vantaEffect, setVantaEffect] = useState(null);
+  const [isSticky, setIsSticky] = useState(false);
+  const navBarRef = useRef(null);
   const vantaRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +23,7 @@ export default function Home() {
           mouseControls: false,
           touchControls: false,
           gyroControls: false,
-          minHeight: 400.0,
+          minHeight: 200.0,
           minWidth: 200.0,
           highlightColor: 0x6a5717,
           midtoneColor: 0xbd250d,
@@ -38,6 +40,25 @@ export default function Home() {
     };
   }, [vantaEffect]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsSticky(!entry.isIntersecting),
+      {
+        root: null,
+        threshold: 1.0,
+      }
+    );
+
+    const target = navBarRef.current;
+    if (target) {
+      observer.observe(target);
+    }
+
+    return () => {
+      if (target) observer.unobserve(target);
+    };
+  }, []);
+
   return (
     <div ref={vantaRef} className="">
       <header className="bg-middleground min-h-10">
@@ -49,31 +70,43 @@ export default function Home() {
           </h1>
         </div>
       </header>
-      <div className="sticky top-10 z-10 flex justify-between items-center w-auto px-48 m-6 mt-20 bg-middleground ">
-        <a
-          href="#about-me"
-          className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-        >
-          About Me
-        </a>
-        <a
-          href="#career"
-          className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-        >
-          My Career
-        </a>
-        <a
-          href="#skills"
-          className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-        >
-          My Skills
-        </a>
-        <a
-          href="#contact-me"
-          className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-        >
-          Contact Me
-        </a>
+      <div ref={navBarRef}></div>
+      <div
+        className={`sticky top-10 z-10 w-auto px-48 m-6 mt-20 bg-middleground transition-all duration-300`}
+      >
+        <div className="flex justify-between items-center">
+          <a
+            href="#about-me"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+          >
+            About Me
+          </a>
+          <a
+            href="#career"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+          >
+            My Career
+          </a>
+          <a
+            href="#skills"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+          >
+            My Skills
+          </a>
+          <a
+            href="#contact-me"
+            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+          >
+            Contact Me
+          </a>
+        </div>
+        {isSticky && (
+          <div
+            className={`divider mx-4 mt-6 mb-4 h-[2px] bg-gradient-to-r from-gray-600 via-gray-300 to-gray-600 transition-opacity duration-500 ${
+              isSticky ? "opacity-100" : "opacity-0"
+            }`}
+          ></div>
+        )}
       </div>
 
       <section className="py-80">
