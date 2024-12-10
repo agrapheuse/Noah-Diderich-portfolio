@@ -10,6 +10,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .link-style {
+    @apply text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300;
+  }
+
+  .h1-style {
+    @apply text-6xl font-bold text-center leading-relaxed text-gray-200 font-[family-name:var(--font-geist-mono)];
+  }
 }
 
 @layer base {
