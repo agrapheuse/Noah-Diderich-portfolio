@@ -38,8 +38,8 @@ export function Skills() {
   };
 
   return (
-    <div id="skills" className="skills-tools m-10 py-12">
-      <Card className="skills-container bg-foreground m-12">
+    <div id="skills" className="skills-tools m-4 lg:m-10 py-12">
+      <Card className="skills-container bg-foreground my-4 lg:m-12">
         <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Skills
         </h2>
@@ -110,7 +110,7 @@ export function Skills() {
         </div>
       </Card>
 
-      <Card className="tools-container bg-foreground m-12 ">
+      <Card className="tools-container bg-foreground lg:m-12 ">
         <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Tools
         </h2>
