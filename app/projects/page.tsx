@@ -3,14 +3,13 @@
 import { useEffect, useRef, useState } from "react";
 import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
+import { Card } from "@/components/ui/card";
 
 export default function Projects() {
   const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
   const navBarRef = useRef(null);
-
-  const [projectType, setProjectType] = useState("frontend");
 
   useEffect(() => {
     if (!vantaEffect && vantaRef.current) {
@@ -87,16 +86,22 @@ export default function Projects() {
         >
           <div className="flex flex-col lg:flex-row justify-between items-center py-2">
             <a
-              href="#about-me"
+              href="#frontend"
               className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
             >
               Frontend Projects
             </a>
             <a
-              href="#career"
+              href="#backend"
               className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
             >
               Backend Projects
+            </a>
+            <a
+              href="#other"
+              className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+            >
+              Other Projects
             </a>
           </div>
         </div>
@@ -106,18 +111,55 @@ export default function Projects() {
           }`}
         ></div>
       </div>
-      {projectType === "frontend" && (
-        <div className="min-h-screen flex flex-col">
-          <div></div>
-          <div></div>
+      <h2 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+        Frontend
+      </h2>
+      <div
+        id="frontend"
+        className="min-h-screen flex flex-row divide-x divide-gray-700"
+      >
+        <div id="left-column" className="flex-1 p-4">
+          <Card>
+            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              TaskTrove
+            </h3>
+          </Card>
+          <Card>
+            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              Techtopia
+            </h3>
+          </Card>
         </div>
-      )}
-      {projectType === "backend" && (
-        <div className="min-h-screen flex flex-col">
-          <div></div>
-          <div></div>
+        <div id="right-column" className="flex-1 p-4">
+          <Card>
+            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              CineTracker
+            </h3>
+          </Card>
         </div>
-      )}
+      </div>
+      <h2 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+        Backend
+      </h2>
+      <div
+        id="backend"
+        className="min-h-screen flex flex-row divide-x divide-gray-700"
+      >
+        <div id="left-column" className="flex-1 p-4">
+          <Card>
+            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              Techtopia
+            </h3>
+          </Card>
+        </div>
+        <div id="right-column" className="flex-1 p-4">
+          <Card>
+            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              CineTracker
+            </h3>
+          </Card>
+        </div>
+      </div>
     </div>
   );
 }
