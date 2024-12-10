@@ -15,8 +15,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Noah Diderich Portfolio",
-  description: "Digital portfolio",
+  title: "Noah Diderich | Full Stack Developer Portfolio",
+  description:
+    "Hi, I am Noah Diderich, a Full-Stack Development graduate from Karel de Grote Hogechool with specialization in Data and AI",
+  keywords:
+    "Noah Diderich, Full Stack Developer, portfolio, web development, skills, career",
 };
 
 export default function RootLayout({
