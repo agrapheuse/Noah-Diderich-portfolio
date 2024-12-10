@@ -13,7 +13,7 @@
           "link": "https://www.rabbitmq.com"
         },
         "gradle": {
-          "logo": "https://www.vectorlogo.zone/logos/gradle/gradle-icon.svg",
+          "logo": "https://www.svgrepo.com/show/373642/gradle.svg",
           "link": "https://gradle.org"
         },
         "bootstrap": {
@@ -27,7 +27,7 @@
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "related": {
         "nodeJS": {
-          "logo": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+          "logo": "https://www.svgrepo.com/show/378837/node.svg",
           "link": "https://nodejs.org"
         }
       }
@@ -95,7 +95,7 @@
       }
     },
     "SQL": {
-      "logo": "https://www.svgrepo.com/show/341068/sql.svg",
+      "logo": "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
       "link": "",
       "related": {
         "microsoft SQL": {

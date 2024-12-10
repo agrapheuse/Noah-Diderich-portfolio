@@ -61,7 +61,13 @@ export default function Home() {
 
   return (
     <div ref={vantaRef} className="">
-      <header className="bg-middleground min-h-10">
+      <header
+        className={`min-h-10 ${isSticky ? "bg-background" : "bg-middleground"}`}
+        style={{
+          transition:
+            "background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+        }}
+      >
         <div className="container mx-auto px-6 py-10">
           <h1 className="text-6xl font-bold text-background-font-color text-center leading-relaxed text-gray-200 font-[family-name:var(--font-geist-mono)]">
             Noah
@@ -71,42 +77,48 @@ export default function Home() {
         </div>
       </header>
       <div ref={navBarRef}></div>
-      <div
-        className={`sticky top-10 z-10 w-auto px-48 m-6 mt-20 bg-middleground transition-all duration-300`}
-      >
-        <div className="flex justify-between items-center">
-          <a
-            href="#about-me"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-          >
-            About Me
-          </a>
-          <a
-            href="#career"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-          >
-            My Career
-          </a>
-          <a
-            href="#skills"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-          >
-            My Skills
-          </a>
-          <a
-            href="#contact-me"
-            className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
-          >
-            Contact Me
-          </a>
+      <div className={`sticky top-0 z-10`}>
+        <div
+          className={`w-auto px-48 py-6 transition-all duration-300 ${
+            isSticky ? "bg-background shadow-xl" : "bg-middleground shadow-none"
+          }`}
+          style={{
+            transition:
+              "background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+          }}
+        >
+          <div className="flex justify-between items-center">
+            <a
+              href="#about-me"
+              className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+            >
+              About Me
+            </a>
+            <a
+              href="#career"
+              className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+            >
+              My Career
+            </a>
+            <a
+              href="#skills"
+              className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+            >
+              My Skills
+            </a>
+            <a
+              href="#contact-me"
+              className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
-        {isSticky && (
-          <div
-            className={`divider mx-4 mt-6 mb-4 h-[2px] bg-gradient-to-r from-gray-600 via-gray-300 to-gray-600 transition-opacity duration-500 ${
-              isSticky ? "opacity-100" : "opacity-0"
-            }`}
-          ></div>
-        )}
+        <div
+          className={`divider h-[2px] bg-gradient-to-r from-gray-600 via-gray-300 to-gray-600 transition-all duration-500 ${
+            isSticky ? "opacity-100" : "opacity-0"
+          }`}
+        ></div>
       </div>
 
       <section className="py-80">

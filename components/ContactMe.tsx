@@ -14,9 +14,29 @@ export function ContactMe() {
             href="https://www.linkedin.com/in/noah-diderich/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-[family-name:var(--font-geist-mono)]"
+            className="inline-block w-80 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-[family-name:var(--font-geist-mono)]"
           >
             Connect with me on LinkedIn
+          </a>
+        </div>
+        <div className="mt-6 text-center">
+          <a
+            href="https://github.com/agrapheuse"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-80 px-6 py-3 bg-black text-white rounded hover:bg-gray-950 transition font-[family-name:var(--font-geist-mono)]"
+          >
+            Follow me on GitHub
+          </a>
+        </div>
+        <div className="mt-6 text-center">
+          <a
+            href="https://gitlab.com/noah.diderich"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-80 px-6 py-3 bg-white text-black rounded hover:bg-gray-300 transition font-[family-name:var(--font-geist-mono)]"
+          >
+            Follow me on GitLab
           </a>
         </div>
       </div>
