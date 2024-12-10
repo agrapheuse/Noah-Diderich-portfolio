@@ -3,21 +3,42 @@ import profilePic from "@/app/public/profile-pic.jpg";
 import { Card } from "./ui/card";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { useEffect, useState } from "react";
 
 export function HeroSection() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div
       id="about-me"
-      className="flex justify-center items-center relative m-10 p-8 py-12 h-[800px]"
+      className="flex justify-center items-center relative lg:m-10 p-8 py-12 h-[800px]"
     >
-      <Card className="rounded-lg bg-foreground py-12 flex justify-center items-center pt-12">
-        <Image
-          src={profilePic}
-          alt="My Portfolio Image"
-          width={300}
-          height={300}
-          className="relative rounded-full shadow-md w-auto h-auto max-h-80 m-8 border-gradient-to-r from-purple-500 via-pink-500 to-red-500"
-        />
+      <Card className="rounded-lg bg-foreground py-12 mt-80 flex flex-col lg:flex-row justify-center items-center pt-12 space-y-6 lg:space-y-0 lg:space-x-12">
+        {isMobile ? (
+          <Image
+            src={profilePic}
+            alt="My Portfolio Image"
+            width={200}
+            height={200}
+            className="relative rounded-full lg:shadow-md w-auto h-auto m-8 lg:px-0"
+          />
+        ) : (
+          <Image
+            src={profilePic}
+            alt="My Portfolio Image"
+            width={300}
+            height={300}
+            className="relative rounded-full lg:shadow-md w-auto h-auto m-8 px-8 lg:px-0"
+          />
+        )}
 
         <div className="container mx-auto px-6">
           <h2 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">

@@ -4,13 +4,13 @@ export function Career() {
   return (
     <div
       id="career"
-      className="flex justify-center items-center relative p-4 mx-10"
+      className="flex justify-center items-center relative p-4 lg:m-10"
     >
       <Card className="container m-auto p-6 font-[family-name:var(--font-geist-mono)] bg-background">
         <h2 className="text-2xl font-bold text-center text-gray-200">
           My Career
         </h2>
-        <Card className="bg-foreground p-4 m-4 rounded shadow">
+        <Card className="bg-foreground p-4 mt-4 lg:m-4 rounded shadow">
           <h3 className="text-xl font-semibold text-gray-200">Education</h3>
           <ul className="mt-2 text-gray-400 space-y-2">
             <li>
@@ -31,7 +31,7 @@ export function Career() {
           </ul>
         </Card>
 
-        <Card className="bg-foreground p-4 m-4 rounded shadow">
+        <Card className="bg-foreground p-4 mt-4 lg:m-4 rounded shadow">
           <h3 className="text-xl font-semibold text-gray-200">
             Work Experience
           </h3>
@@ -46,7 +46,7 @@ export function Career() {
               Reference: Maarten Cautreels (
               <a
                 href="mailto:maarten.cautreels@localyse.eu"
-                className="text-blue-500 hover:underline"
+                className="text-blue-400 hover:underline"
               >
                 maarten.cautreels@localyse.eu
               </a>
