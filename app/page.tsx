@@ -79,7 +79,7 @@ export default function Home() {
       <div ref={navBarRef}></div>
       <div className={`sticky top-0 z-10`}>
         <div
-          className={`w-auto px-48 py-6 transition-all duration-300 ${
+          className={`w-auto lg:px-48 py-2 lg:py-6 transition-all duration-300 ${
             isSticky ? "bg-background shadow-xl" : "bg-middleground shadow-none"
           }`}
           style={{
@@ -87,7 +87,7 @@ export default function Home() {
               "background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
           }}
         >
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col lg:flex-row justify-between items-center py-2">
             <a
               href="#about-me"
               className="text-gray-200 font-[family-name:var(--font-geist-mono)] hover:underline hover:text-gray-300"
