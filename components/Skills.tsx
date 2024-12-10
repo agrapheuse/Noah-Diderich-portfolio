@@ -41,9 +41,9 @@ export function Skills() {
   return (
     <div id="skills" className="skills-tools m-10 py-12">
       <Card className="skills-container bg-foreground m-12">
-        <h1 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
+        <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Skills
-        </h1>
+        </h2>
         <div className="skills-row flex justify-center gap-8 p-4 mb-6 [&:hover>div]:opacity-50">
           {Object.keys(skillsJson.skills).map((key) => (
             <div
@@ -112,9 +112,9 @@ export function Skills() {
       </Card>
 
       <Card className="tools-container bg-foreground m-12 ">
-        <h1 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
+        <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Tools
-        </h1>
+        </h2>
         <div className="tools-row flex justify-center gap-8 p-4 mb-10 [&:hover>div]:opacity-50">
           {Object.keys(skillsJson.tools).map((key) => (
             <div

@@ -17,7 +17,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Noah Diderich | Full Stack Developer Portfolio",
   description:
-    "Portfolio of Noah Diderich, a Full Stack Developer with expertise in many different technologies",
+    "Hi, I am Noah Diderich, a Full-Stack Development graduate from Karel de Grote Hogechool with specialization in Data and AI",
   keywords:
     "Noah Diderich, Full Stack Developer, portfolio, web development, skills, career",
 };
