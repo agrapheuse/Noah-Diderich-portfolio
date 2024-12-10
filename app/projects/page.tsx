@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import FOG from "vanta/dist/vanta.fog.min";
 import * as THREE from "three";
 import { Card } from "@/components/ui/card";
+
+import TTSS1 from "@/app/public/tasktroveSS1.png";
 
 export default function Projects() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -119,22 +122,73 @@ export default function Projects() {
         className="min-h-screen flex flex-row divide-x divide-gray-700"
       >
         <div id="left-column" className="flex-1 p-4">
-          <Card>
+          <Card className="bg-background">
             <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
               TaskTrove
             </h3>
+            <Image
+              src={TTSS1}
+              alt="TaskTrove ScreenShot 1"
+              width={window.innerWidth / 6}
+              height={200}
+              className="relative lg:shadow-md w-auto h-auto m-8 lg:px-0"
+            />
+            <text className="text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)] m-4">
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum
+              conubia rhoncus ornare sollicitudin sociosqu primis porttitor
+              nostra. Eros convallis at sodales convallis mus nascetur praesent
+              ornare penatibus. Tempor lorem erat lorem euismod quis porttitor
+              purus. Eget facilisis mauris interdum porta in elementum. Lobortis
+              sociosqu curabitur dolor himenaeos conubia! Dictumst ipsum amet
+              condimentum luctus litora ridiculus. Lacinia aenean per hac montes
+              proin in vel quam ridiculus. Auctor dis est malesuada per nisi mi.
+            </text>
           </Card>
-          <Card>
+          <Card className="bg-background">
             <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
               Techtopia
             </h3>
+            <Image
+              src=""
+              alt="TaskTrove ScreenShot 1"
+              width={window.innerWidth / 6}
+              height={200}
+              className="relative lg:shadow-md w-auto h-auto m-8 lg:px-0"
+            />
+            <text className="text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum
+              conubia rhoncus ornare sollicitudin sociosqu primis porttitor
+              nostra. Eros convallis at sodales convallis mus nascetur praesent
+              ornare penatibus. Tempor lorem erat lorem euismod quis porttitor
+              purus. Eget facilisis mauris interdum porta in elementum. Lobortis
+              sociosqu curabitur dolor himenaeos conubia! Dictumst ipsum amet
+              condimentum luctus litora ridiculus. Lacinia aenean per hac montes
+              proin in vel quam ridiculus. Auctor dis est malesuada per nisi mi.
+            </text>
           </Card>
         </div>
         <div id="right-column" className="flex-1 p-4">
-          <Card>
+          <Card className="bg-background mt-96">
             <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
               CineTracker
             </h3>
+            <Image
+              src=""
+              alt="TaskTrove ScreenShot 1"
+              width={window.innerWidth / 6}
+              height={200}
+              className="relative lg:shadow-md w-auto h-auto m-8 lg:px-0"
+            />
+            <text className="text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum
+              conubia rhoncus ornare sollicitudin sociosqu primis porttitor
+              nostra. Eros convallis at sodales convallis mus nascetur praesent
+              ornare penatibus. Tempor lorem erat lorem euismod quis porttitor
+              purus. Eget facilisis mauris interdum porta in elementum. Lobortis
+              sociosqu curabitur dolor himenaeos conubia! Dictumst ipsum amet
+              condimentum luctus litora ridiculus. Lacinia aenean per hac montes
+              proin in vel quam ridiculus. Auctor dis est malesuada per nisi mi.
+            </text>
           </Card>
         </div>
       </div>
