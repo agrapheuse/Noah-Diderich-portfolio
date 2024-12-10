@@ -29,12 +29,11 @@ export function Skills() {
 
   const handleSkillClick = (skill: string) => {
     if (selectedSkill === skill) {
-      // Collapse transition
       setVisible(false);
-      setTimeout(() => setSelectedSkill(null), 500); // Delay clearing the skill to match the transition duration
+      setTimeout(() => setSelectedSkill(null), 500);
     } else {
       setSelectedSkill(skill);
-      setVisible(true); // Expand transition
+      setVisible(true);
     }
   };
 
@@ -44,19 +43,19 @@ export function Skills() {
         <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Skills
         </h2>
-        <div className="skills-row flex justify-center gap-8 p-4 mb-6 [&:hover>div]:opacity-50">
+        <div className="skills-row flex justify-center gap-8 p-4 mb-6">
           {Object.keys(skillsJson.skills).map((key) => (
             <div
               key={key}
-              className="skill-item hover:!opacity-100 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
+              className="skill-item hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm"
               onClick={() => handleSkillClick(key)}
             >
               <Image
                 src={skillsJson.skills[key].logo || ""}
                 alt={key}
-                className="w-16 h-16 object-contain"
-                width="8"
-                height="8"
+                className="w-12 h-12 object-contain"
+                width="12"
+                height="12"
               />
             </div>
           ))}
@@ -72,13 +71,13 @@ export function Skills() {
           )}
 
           {selectedSkill && skillsJson.skills[selectedSkill]?.related && (
-            <div className="related-skills-row flex justify-center gap-8 p-4 [&:hover>div]:opacity-50 m-10">
+            <div className="related-skills-row flex justify-center gap-8 p-4 m-8">
               {Object.keys(skillsJson.skills[selectedSkill].related).length ? (
                 Object.keys(skillsJson.skills[selectedSkill].related).map(
                   (relatedKey) => (
                     <div
                       key={relatedKey}
-                      className="related-skill-item hover:!opacity-100 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
+                      className="related-skill-item hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm"
                     >
                       <a
                         href={
@@ -115,11 +114,11 @@ export function Skills() {
         <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
           Tools
         </h2>
-        <div className="tools-row flex justify-center gap-8 p-4 mb-10 [&:hover>div]:opacity-50">
+        <div className="tools-row flex justify-center gap-8 p-4 mb-10">
           {Object.keys(skillsJson.tools).map((key) => (
             <div
               key={key}
-              className="tool-item hover:!opacity-100 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 cursor-pointer flex flex-col items-center justify-center w-24 h-24 bg-foreground shadow-md"
+              className="tool-item hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm"
               onClick={() => handleSkillClick(key)}
             >
               <Image
