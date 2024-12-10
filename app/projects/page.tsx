@@ -122,8 +122,8 @@ export default function Projects() {
         className="min-h-screen flex flex-row divide-x divide-gray-700"
       >
         <div id="left-column" className="flex-1 p-4">
-          <Card className="bg-background">
-            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
+          <Card className="bg-background my-4">
+            <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)] m-4">
               TaskTrove
             </h3>
             <Image
@@ -133,7 +133,7 @@ export default function Projects() {
               height={200}
               className="relative lg:shadow-md w-auto h-auto m-8 lg:px-0"
             />
-            <text className="text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)] m-4">
+            <text className="text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
               Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum
               conubia rhoncus ornare sollicitudin sociosqu primis porttitor
               nostra. Eros convallis at sodales convallis mus nascetur praesent
@@ -144,7 +144,7 @@ export default function Projects() {
               proin in vel quam ridiculus. Auctor dis est malesuada per nisi mi.
             </text>
           </Card>
-          <Card className="bg-background">
+          <Card className="bg-background my-4">
             <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
               Techtopia
             </h3>
@@ -200,7 +200,7 @@ export default function Projects() {
         className="min-h-screen flex flex-row divide-x divide-gray-700"
       >
         <div id="left-column" className="flex-1 p-4">
-          <Card className="bg-background">
+          <Card className="bg-background my-4">
             <h3 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
               Techtopia
             </h3>
