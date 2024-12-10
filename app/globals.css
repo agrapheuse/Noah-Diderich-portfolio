@@ -18,6 +18,14 @@ body {
   .h1-style {
     @apply text-6xl font-bold text-center leading-relaxed text-gray-200 font-[family-name:var(--font-geist-mono)];
   }
+
+  .section-style {
+    @apply flex justify-center items-center relative lg:m-10;
+  }
+
+  .card-style {
+    @apply rounded-lg bg-foreground;
+  }
 }
 
 @layer base {

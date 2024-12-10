@@ -17,11 +17,11 @@ export function HeroSection() {
   }, []);
 
   return (
-    <div
-      id="about-me"
-      className="flex justify-center items-center relative lg:m-10 p-8 py-12 h-[800px]"
-    >
-      <Card className="rounded-lg bg-foreground py-12 mt-80 flex flex-col lg:flex-row justify-center items-center pt-12 space-y-6 lg:space-y-0 lg:space-x-12">
+    <div className="section-style">
+      <Card
+        id="about-me"
+        className="card-style mt-80 flex flex-col lg:flex-row justify-center items-center pt-12 space-y-6 lg:space-y-0 lg:space-x-12"
+      >
         {isMobile ? (
           <Image
             src={profilePic}
