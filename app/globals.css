@@ -19,12 +19,28 @@ body {
     @apply text-6xl font-bold text-center leading-relaxed text-gray-200 font-[family-name:var(--font-geist-mono)];
   }
 
+  .h2-style {
+    @apply text-3xl p-4 font-bold text-center text-gray-200 font-[family-name:var(--font-geist-mono)];
+  }
+
+  .h3-style {
+    @apply text-xl font-semibold text-gray-200 font-[family-name:var(--font-geist-mono)];
+  }
+
+  .p-style {
+    @apply mt-4 text-center font-[family-name:var(--font-geist-mono)] text-gray-400;
+  }
+
   .section-style {
-    @apply flex justify-center items-center relative lg:m-10;
+    @apply flex justify-center items-center relative lg:m-10 p-4;
   }
 
   .card-style {
-    @apply rounded-lg bg-foreground;
+    @apply rounded-lg bg-foreground p-6;
+  }
+
+  .ul-style {
+    @apply mt-2 text-gray-400 space-y-2 font-[family-name:var(--font-geist-mono)];
   }
 }
 

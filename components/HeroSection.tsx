@@ -41,10 +41,8 @@ export function HeroSection() {
         )}
 
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
-            About Me
-          </h2>
-          <p className="mt-4 text-center font-[family-name:var(--font-geist-mono)] text-gray-400">
+          <h2 className="h2-style">About Me</h2>
+          <p className="p-style">
             I am German and Luxembourgish but I was born and raised in Brussels.
             I was always passionate about science and technologies. I first
             wanted to become an astrophysicist so at school, I specialized in
@@ -55,7 +53,7 @@ export function HeroSection() {
             to diminish, I however had a IT class where we discovered Python and
             I loved it.
           </p>
-          <p className="mt-4 text-center font-[family-name:var(--font-geist-mono)] text-gray-400">
+          <p className="p-style">
             I then decided to make a full 180 and applied to the Karel de Grote
             Hogeschol (KdG). I moved to Antwerp and started a new life as a
             developer. Now I have finished my degree and I am still just as

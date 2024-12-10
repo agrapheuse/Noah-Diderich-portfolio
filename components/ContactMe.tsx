@@ -7,9 +7,7 @@ export function ContactMe() {
     <div id="contact-me" className="section-style m-4 py-12">
       <Card className="card-style p-12 m-4 lg:m-10 py-14">
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold text-center text-gray-200 font-[family-name:var(--font-geist-mono)]">
-            Contact Me
-          </h2>
+          <h2 className="h2-style">Contact Me</h2>
           <div className="mt-6 text-center">
             <a
               href="https://www.linkedin.com/in/noah-diderich/"

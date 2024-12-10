@@ -40,9 +40,7 @@ export function Skills() {
   return (
     <div id="skills" className="m-4 lg:m-10 py-12">
       <Card className="card-style my-4 lg:m-12">
-        <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
-          Skills
-        </h2>
+        <h2 className="h2-style">Skills</h2>
         <div className="skills-row flex justify-center gap-8 p-4 mb-6">
           {Object.keys(skillsJson.skills).map((key) => (
             <div
@@ -111,9 +109,7 @@ export function Skills() {
       </Card>
 
       <Card className="card-style lg:m-12 ">
-        <h2 className="flex justify-center p-4 text-3xl font-bold text-gray-300 font-[family-name:var(--font-geist-mono)]">
-          Tools
-        </h2>
+        <h2 className="h2-style">Tools</h2>
         <div className="tools-row flex justify-center gap-8 p-4 mb-10">
           {Object.keys(skillsJson.tools).map((key) => (
             <div
