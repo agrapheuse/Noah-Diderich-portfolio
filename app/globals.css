@@ -36,11 +36,15 @@ body {
   }
 
   .card-style {
-    @apply rounded-lg bg-foreground p-6;
+    @apply rounded-lg bg-foreground p-6 border-foreground;
   }
 
   .profile-pic-style {
     @apply;
+  }
+
+  .image-style {
+    @apply relative items-center justify-center lg:shadow-md w-auto h-auto m-8 lg:px-0;
   }
 
   .ul-style {
@@ -57,6 +61,22 @@ body {
 
   .social-media-style {
     @apply inline-block lg:w-80 px-6 py-3 rounded transition font-[family-name:var(--font-geist-mono)];
+  }
+
+  .text-style {
+    @apply text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)];
+  }
+
+  .project-column {
+    @apply flex-1 p-4 mx-4;
+  }
+
+  .previous-button-style {
+    @apply absolute left-2 top-1/2 transform -translate-y-1/2 z-10 p-2;
+  }
+
+  .next-button-style {
+    @apply absolute right-2 top-1/2 transform -translate-y-1/2 z-10 p-2;
   }
 }
 
