@@ -41,11 +41,11 @@ export function Skills() {
     <div id="skills" className="m-4 lg:m-10 py-12">
       <Card className="card-style my-4 lg:m-12">
         <h2 className="h2-style">Skills</h2>
-        <div className="skills-row flex justify-center gap-8 p-4 mb-6">
+        <div className="skills-row-style mb-6">
           {Object.keys(skillsJson.skills).map((key) => (
             <div
               key={key}
-              className="skill-item hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm"
+              className="skills-item-style"
               onClick={() => handleSkillClick(key)}
             >
               <Image
@@ -60,7 +60,7 @@ export function Skills() {
         </div>
 
         <div
-          className={`related-skills-container overflow-hidden transition-all duration-500 ${
+          className={`overflow-hidden transition-all duration-500 ${
             visible ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
@@ -69,39 +69,32 @@ export function Skills() {
           )}
 
           {selectedSkill && skillsJson.skills[selectedSkill]?.related && (
-            <div className="related-skills-row flex justify-center gap-8 p-4 m-8">
-              {Object.keys(skillsJson.skills[selectedSkill].related).length ? (
-                Object.keys(skillsJson.skills[selectedSkill].related).map(
-                  (relatedKey) => (
-                    <div
-                      key={relatedKey}
-                      className="related-skill-item hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm"
+            <div className="skills-row-style m-8">
+              {Object.keys(skillsJson.skills[selectedSkill].related).map(
+                (relatedKey) => (
+                  <div key={relatedKey} className="skills-item-style">
+                    <a
+                      href={
+                        skillsJson.skills[selectedSkill].related[relatedKey]
+                          .link
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-center mt-2 text-blue-500 underline"
                     >
-                      <a
-                        href={
+                      <Image
+                        src={
                           skillsJson.skills[selectedSkill].related[relatedKey]
-                            .link
+                            .logo || ""
                         }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-center mt-2 text-blue-500 underline"
-                      >
-                        <Image
-                          src={
-                            skillsJson.skills[selectedSkill].related[relatedKey]
-                              .logo || ""
-                          }
-                          alt={relatedKey}
-                          className="w-12 h-12 object-contain"
-                          width="8"
-                          height="8"
-                        />
-                      </a>
-                    </div>
-                  )
+                        alt={relatedKey}
+                        className="w-12 h-12 object-contain"
+                        width="8"
+                        height="8"
+                      />
+                    </a>
+                  </div>
                 )
-              ) : (
-                <p className="text-gray-500">No related skills available</p>
               )}
             </div>
           )}
@@ -110,11 +103,11 @@ export function Skills() {
 
       <Card className="card-style lg:m-12 ">
         <h2 className="h2-style">Tools</h2>
-        <div className="tools-row flex justify-center gap-8 p-4 mb-10">
+        <div className="skills-row-style mb-10">
           {Object.keys(skillsJson.tools).map((key) => (
             <div
               key={key}
-              className="tool-item hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm"
+              className="skills-item-style"
               onClick={() => handleSkillClick(key)}
             >
               <Image

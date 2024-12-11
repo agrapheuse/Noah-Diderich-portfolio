@@ -39,8 +39,20 @@ body {
     @apply rounded-lg bg-foreground p-6;
   }
 
+  .profile-pic-style {
+    @apply;
+  }
+
   .ul-style {
     @apply mt-2 text-gray-400 space-y-2 font-[family-name:var(--font-geist-mono)];
+  }
+
+  .skills-row-style {
+    @apply flex justify-center gap-8 p-4;
+  }
+
+  .skills-item-style {
+    @apply hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm;
   }
 }
 

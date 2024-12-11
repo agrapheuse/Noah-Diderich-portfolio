@@ -20,26 +20,17 @@ export function HeroSection() {
     <div className="section-style">
       <Card
         id="about-me"
-        className="card-style mt-80 flex flex-col lg:flex-row justify-center items-center pt-12 space-y-6 lg:space-y-0 lg:space-x-12"
+        className="card-style mt-80 flex flex-col lg:flex-row pt-12 space-y-6 lg:space-y-0 lg:space-x-12"
       >
-        {isMobile ? (
-          <Image
-            src={profilePic}
-            alt="My Portfolio Image"
-            width={200}
-            height={200}
-            className="relative rounded-full lg:shadow-md w-auto h-auto m-8 lg:px-0"
-          />
-        ) : (
-          <Image
-            src={profilePic}
-            alt="My Portfolio Image"
-            width={300}
-            height={300}
-            className="relative rounded-full lg:shadow-md w-auto h-auto m-8 px-8 lg:px-0"
-          />
-        )}
-
+        <Image
+          src={profilePic}
+          alt="My Portfolio Image"
+          width={isMobile ? 200 : 300}
+          height={isMobile ? 200 : 300}
+          className={`relative rounded-full lg:shadow-md w-auto h-auto m-8 lg:px-0 ${
+            isMobile ? "px-8" : ""
+          }`}
+        />
         <div className="container mx-auto px-6">
           <h2 className="h2-style">About Me</h2>
           <p className="p-style">
