@@ -17,34 +17,23 @@ export function HeroSection() {
   }, []);
 
   return (
-    <div
-      id="about-me"
-      className="flex justify-center items-center relative lg:m-10 p-8 py-12 h-[800px]"
-    >
-      <Card className="rounded-lg bg-foreground py-12 mt-80 flex flex-col lg:flex-row justify-center items-center pt-12 space-y-6 lg:space-y-0 lg:space-x-12">
-        {isMobile ? (
-          <Image
-            src={profilePic}
-            alt="My Portfolio Image"
-            width={200}
-            height={200}
-            className="relative rounded-full lg:shadow-md w-auto h-auto m-8 lg:px-0"
-          />
-        ) : (
-          <Image
-            src={profilePic}
-            alt="My Portfolio Image"
-            width={300}
-            height={300}
-            className="relative rounded-full lg:shadow-md w-auto h-auto m-8 px-8 lg:px-0"
-          />
-        )}
-
+    <div className="section-style">
+      <Card
+        id="about-me"
+        className="card-style mt-80 flex flex-col lg:flex-row pt-12 space-y-6 lg:space-y-0 lg:space-x-12"
+      >
+        <Image
+          src={profilePic}
+          alt="My Portfolio Image"
+          width={isMobile ? 200 : 300}
+          height={isMobile ? 200 : 300}
+          className={`relative rounded-full lg:shadow-md w-auto h-auto m-8 lg:px-0 ${
+            isMobile ? "px-8" : ""
+          }`}
+        />
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl text-gray-200 font-bold text-center font-[family-name:var(--font-geist-mono)]">
-            About Me
-          </h2>
-          <p className="mt-4 text-center font-[family-name:var(--font-geist-mono)] text-gray-400">
+          <h2 className="h2-style">About Me</h2>
+          <p className="p-style">
             I am German and Luxembourgish but I was born and raised in Brussels.
             I was always passionate about science and technologies. I first
             wanted to become an astrophysicist so at school, I specialized in
@@ -55,7 +44,7 @@ export function HeroSection() {
             to diminish, I however had a IT class where we discovered Python and
             I loved it.
           </p>
-          <p className="mt-4 text-center font-[family-name:var(--font-geist-mono)] text-gray-400">
+          <p className="p-style">
             I then decided to make a full 180 and applied to the Karel de Grote
             Hogeschol (KdG). I moved to Antwerp and started a new life as a
             developer. Now I have finished my degree and I am still just as
