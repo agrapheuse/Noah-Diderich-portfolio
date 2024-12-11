@@ -54,6 +54,10 @@ body {
   .skills-item-style {
     @apply hover:bg-background bg-transparent rounded-md transition duration-300 cursor-pointer flex flex-col items-center justify-center w-20 h-20 shadow-sm;
   }
+
+  .social-media-style {
+    @apply inline-block lg:w-80 px-6 py-3 rounded transition font-[family-name:var(--font-geist-mono)];
+  }
 }
 
 @layer base {

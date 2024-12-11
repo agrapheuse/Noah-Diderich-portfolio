@@ -38,7 +38,7 @@ export function Skills() {
   };
 
   return (
-    <div id="skills" className="m-4 lg:m-10 py-12">
+    <div id="skills" className="m-4 lg:m-10 py-8">
       <Card className="card-style my-4 lg:m-12">
         <h2 className="h2-style">Skills</h2>
         <div className="skills-row-style mb-6">
