@@ -19,6 +19,11 @@ import TTSS3 from "@/app/public/TT/tasktroveSS3.png";
 import TTSS4 from "@/app/public/TT/tasktroveSS4.png";
 import TTSS5 from "@/app/public/TT/tasktroveSS5.png";
 
+import CTSS1 from "@/app/public/CT/cinetrackerSS1.png";
+import CTSS2 from "@/app/public/CT/cinetrackerSS2.png";
+import CTSS3 from "@/app/public/CT/cinetrackerSS3.png";
+import CTSS4 from "@/app/public/CT/cinetrackerSS4.png";
+
 import NavBar from "@/components/NavBar";
 
 export default function Projects() {
@@ -138,7 +143,7 @@ export default function Projects() {
               <CarouselContent>
                 <CarouselItem className="flex justify-center items-center">
                   <Image
-                    src={TTSS1}
+                    src={CTSS1}
                     alt="TaskTrove ScreenShot 1"
                     width={200}
                     height={200}
@@ -147,7 +152,7 @@ export default function Projects() {
                 </CarouselItem>
                 <CarouselItem>
                   <Image
-                    src={TTSS1}
+                    src={CTSS2}
                     alt="TaskTrove ScreenShot 1"
                     width={200}
                     height={200}
@@ -156,7 +161,16 @@ export default function Projects() {
                 </CarouselItem>
                 <CarouselItem>
                   <Image
-                    src={TTSS1}
+                    src={CTSS3}
+                    alt="TaskTrove ScreenShot 1"
+                    width={200}
+                    height={200}
+                    className="image-style"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    src={CTSS4}
                     alt="TaskTrove ScreenShot 1"
                     width={200}
                     height={200}
