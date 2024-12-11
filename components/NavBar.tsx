@@ -1,11 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 
+type Link = {
+  name: string;
+  link: string;
+};
+
 export default function NavBar({
   word1,
   word2,
+  links,
 }: {
   word1: string;
   word2: string;
+  links: Record<string, Link>;
 }) {
   const [isSticky, setIsSticky] = useState(false);
   const navBarRef = useRef(null);
@@ -58,18 +65,11 @@ export default function NavBar({
           }}
         >
           <div className="flex flex-col lg:flex-row justify-between items-center py-2">
-            <a href="#about-me" className="link-style">
-              About Me
-            </a>
-            <a href="#career" className="link-style">
-              My Career
-            </a>
-            <a href="#skills" className="link-style">
-              My Skills
-            </a>
-            <a href="#contact-me" className="link-style">
-              Contact Me
-            </a>
+            {Object.keys(links).map((key) => (
+              <a href={links[key].link} className="link-style" key={key}>
+                {links[key].name}
+              </a>
+            ))}
           </div>
         </div>
         <div
