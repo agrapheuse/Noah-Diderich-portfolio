@@ -2,17 +2,12 @@ import { Card } from "./ui/card";
 
 export function Career() {
   return (
-    <div
-      id="career"
-      className="flex justify-center items-center relative p-4 lg:m-10"
-    >
-      <Card className="container m-auto p-6 font-[family-name:var(--font-geist-mono)] bg-background">
-        <h2 className="text-2xl font-bold text-center text-gray-200">
-          My Career
-        </h2>
-        <Card className="bg-foreground p-4 mt-4 lg:m-4 rounded shadow">
-          <h3 className="text-xl font-semibold text-gray-200">Education</h3>
-          <ul className="mt-2 text-gray-400 space-y-2">
+    <div id="career" className="section-style p-4">
+      <Card className="container m-auto p-6 bg-background">
+        <h2 className="h2-style">My Career</h2>
+        <Card className="card-style p-4 mt-4 lg:m-4 shadow">
+          <h3 className="h3-style">Education</h3>
+          <ul className="ul-style">
             <li>
               <strong>Karel de Groot Hogeschool</strong> (2020-2024)
               <br />
@@ -31,11 +26,9 @@ export function Career() {
           </ul>
         </Card>
 
-        <Card className="bg-foreground p-4 mt-4 lg:m-4 rounded shadow">
-          <h3 className="text-xl font-semibold text-gray-200">
-            Work Experience
-          </h3>
-          <ul className="mt-2 text-gray-400 space-y-2">
+        <Card className="card-style p-4 mt-4 lg:m-4 shadow">
+          <h3 className="h3-style">Work Experience</h3>
+          <ul className="ul-style">
             <li>
               <strong>
                 Tryve monday.com partners and CRM specialists, Edegem
