@@ -40,9 +40,28 @@ export default function Home() {
     };
   }, [vantaEffect]);
 
+  const links = {
+    aboutMe: {
+      name: "About Me",
+      link: "#about-me",
+    },
+    career: {
+      name: "My Career",
+      link: "#career",
+    },
+    skills: {
+      name: "My Skills",
+      link: "#skills",
+    },
+    contactMe: {
+      name: "Contact Me",
+      link: "#contact-me",
+    },
+  };
+
   return (
-    <div ref={vantaRef} className="">
-      <NavBar word1="Noah" word2="Diderich" />
+    <div /*ref={vantaRef}*/ className="">
+      <NavBar word1="Noah" word2="Diderich" links={links} />
 
       <section className="py-80">
         <HeroSection />
