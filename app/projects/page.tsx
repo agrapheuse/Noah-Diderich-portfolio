@@ -13,7 +13,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import TechT from "@/app/public/TECHTOPIA/techtopiaSS1.png";
+import TechT1 from "@/app/public/TECHTOPIA/techtopiaSS1.png";
+import TechT2 from "@/app/public/TECHTOPIA/techtopiaSS2.png";
+import TechT3 from "@/app/public/TECHTOPIA/techtopiaSS3.png";
 
 import TTSS1 from "@/app/public/TT/tasktroveSS2.png";
 import TTSS2 from "@/app/public/TT/tasktroveSS1.png";
@@ -198,13 +200,31 @@ export default function Projects() {
               <CarouselContent>
                 <CarouselItem className="flex justify-center items-center">
                   <Image
-                    src={TechT}
+                    src={TechT1}
+                    alt="TaskTrove ScreenShot 1"
+                    layout="responsive"
+                    className="image-style"
+                  />
+                </CarouselItem>
+                <CarouselItem className="flex justify-center items-center">
+                  <Image
+                    src={TechT2}
+                    alt="TaskTrove ScreenShot 1"
+                    layout="responsive"
+                    className="image-style"
+                  />
+                </CarouselItem>
+                <CarouselItem className="flex justify-center items-center">
+                  <Image
+                    src={TechT3}
                     alt="TaskTrove ScreenShot 1"
                     layout="responsive"
                     className="image-style"
                   />
                 </CarouselItem>
               </CarouselContent>
+              <CarouselPrevious className="" />
+              <CarouselNext className="" />
             </Carousel>
             <CardDescription className="text-style">
               Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum
